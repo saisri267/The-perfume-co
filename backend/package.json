@@ -1,0 +1,19 @@
+{
+  "name": "perfume-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^6.13.8",
+    "nodemailer": "^7.0.10",
+    "validator": "^13.15.23"
+  }
+}

@@ -1,0 +1,144 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* -------- HERO -------- */
+.hero {
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 8%;
+  color: #fff;
+}
+
+.hero-overlay h1 {
+  font-size: 52px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  font-size: 18px;
+  opacity: 0.9;
+  max-width: 420px;
+}
+
+/* -------- FEATURED SCENTS -------- */
+.featured {
+  padding: 60px 8%;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+.featured-card {
+  cursor: pointer;
+}
+
+.featured-card img {
+  width: 100%;
+  height: 340px;
+  object-fit: contain;
+  background: #f6f6f6;
+}
+
+.featured-info {
+  margin-top: 10px;
+}
+
+.featured-info .name {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.featured-info .price {
+  font-size: 14px;
+  color: #555;
+}
+
+/* -------- FILTER BAR -------- */
+.filter-bar {
+  display: flex;
+  gap: 20px;
+  padding: 18px 8%;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.filter-bar select {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 14px;
+}
+
+/* -------- PRODUCT GRID -------- */
+.product-grid {
+  padding: 40px 8% 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 26px;
+}
+
+.product-card {
+  cursor: pointer;
+}
+
+.product-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  background: #f6f6f6;
+}
+
+.product-card .title {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.product-card .price {
+  font-size: 13px;
+  color: #555;
+}
+
+/* -------- RESPONSIVE -------- */
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 36px;
+  }
+
+  .hero-overlay p {
+    font-size: 16px;
+  }
+
+  .featured,
+  .filter-bar,
+  .product-grid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
